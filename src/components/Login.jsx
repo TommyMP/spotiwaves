@@ -27,6 +27,7 @@ async function generateCodeChallenge(codeVerifier) {
 
 const clientId = '0ae08cb5d8c74b8ab77f73cba2dedcbb';
 const redirectUri = 'http://localhost:3000';
+//const redirectUri = 'https://tommymp.github.io/spotiwaves/';
 
 class Login extends React.Component {
  
