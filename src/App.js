@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import {Generate} from './components/Generate';
 import Login from './components/Login';
 import { useEffect } from 'react';
 import { redirectUri } from './components/Login';
+import packageJson from '../package.json';
 
 
 const clientId = '0ae08cb5d8c74b8ab77f73cba2dedcbb';
@@ -56,6 +56,7 @@ function App() {
 
   return (
     <div className="page-container">
+      <p class="version">Spotiwaves - version {packageJson.version}</p>
       {accessToken ?
         <Generate accessToken={accessToken} />
         :
