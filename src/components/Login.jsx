@@ -26,8 +26,8 @@ async function generateCodeChallenge(codeVerifier) {
 }
 
 const clientId = '0ae08cb5d8c74b8ab77f73cba2dedcbb';
-const redirectUri = 'http://localhost:3000';
-//const redirectUri = 'https://tommymp.github.io/spotiwaves/';
+export const redirectUri = 'http://localhost:3000';
+//export const redirectUri = 'https://tommymp.github.io/spotiwaves/';
 
 class Login extends React.Component {
  
@@ -58,9 +58,12 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div>
-                <button onClick={this.handleLogin}>Login</button>
+            <>
+            <h1>Spotiwaves</h1>
+            <div className="login-container">
+                <button className="login-btn" onClick={this.handleLogin}>Login with Spotify</button>
             </div>
+            </>
         )
     }
     

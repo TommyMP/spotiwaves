@@ -42,7 +42,8 @@ export function Track(props) {
                 let i = Math.ceil(levels.length * (x / canvas.width));
                 let h = Math.round(levels[i] * canvas.height) / 2;
 
-                context.fillStyle = "green";
+                //context.fillStyle = "green";
+                context.fillStyle = "#16A34A";
                 context.beginPath();
                 context.roundRect(x, (canvas.height / 2) - h, 4, h, [10, 10, 0, 0]);
                 context.fill();
@@ -55,10 +56,10 @@ export function Track(props) {
     }, [])
 
     return (
-        <div>
-            <canvas height={80} width={200} ref={canvasRef}></canvas>
-            <h3>{props.track.name}</h3>
-            <h4>{props.track.artists[0].name}</h4>
+        <div className="track">
+            <canvas ref={canvasRef} width={240} height={80}></canvas>
+            <p className="title">{props.track.name}</p>
+            <p className="artist">{props.track.artists[0].name}</p>
         </div>
     )
 }

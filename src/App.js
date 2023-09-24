@@ -4,10 +4,11 @@ import { useState } from 'react';
 import {Generate} from './components/Generate';
 import Login from './components/Login';
 import { useEffect } from 'react';
+import { redirectUri } from './components/Login';
 
 
 const clientId = '0ae08cb5d8c74b8ab77f73cba2dedcbb';
-const redirectUri = 'http://localhost:3000';
+//const redirectUri = 'http://localhost:3000';
 //const redirectUri = 'https://tommymp.github.io/spotiwaves/';
 
 
@@ -54,7 +55,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="page-container">
       {accessToken ?
         <Generate accessToken={accessToken} />
         :

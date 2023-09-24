@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { Track } from "./Track";
+import { Loader } from "./Loader";
 
 const spotify = new SpotifyWebApi()
 
@@ -49,16 +50,16 @@ export function Generate(props) {
     }, [])
 
     return (
-        <div>
+        <div className="generate-container">
             {
                 !showLoading ?
-                    <div className='margin'>
+                    <div className='tracks-container'>
                         {topTracks.map(t => {
                             return <Track key={t.id} track={t} />
                         })}
                     </div>
                     :
-                    <><h1>Loading...</h1></>
+                    <Loader></Loader>
             }
 
 
