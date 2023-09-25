@@ -18,6 +18,7 @@ export function Generate(props) {
     const [showLoading, setShowLoading] = useState(false);
     const elementRef = useRef(null);
 
+    
 
     const htmlToImageConvert = () => {
         toPng(elementRef.current, { canvasWidth: 1000, canvasHeight: 790 })

@@ -32,7 +32,7 @@ h1 {
 }
 
 .generate-container {
-  @apply bg-neutral-900 flex flex-row justify-center items-center rounded-3xl p-4 sm:p-8
+  @apply bg-neutral-900 flex flex-row justify-center items-center rounded-3xl p-2 sm:p-4
   w-[95%] h-[90%] 
   sm:w-[90%] sm:h-[90%]
   md:w-[80%] md:h-[95%]
@@ -41,18 +41,25 @@ h1 {
 }
 
 .tracks-container {
-  @apply w-[100%] h-[100%] grid grid-cols-2;
+  @apply w-[100%] h-[100%] grid grid-cols-2 sm:grid-cols-3 sm:tall:grid-cols-2 md:short:grid-cols-2;
 }
 
 .track {
-  @apply flex flex-col justify-evenly items-center p-1 sm:p-3 text-green-600;
+  @apply flex flex-col justify-evenly items-center p-1 text-green-600 col-span-1;
+}
+
+.track:nth-child(11) {
+  @apply col-span-1 sm:col-span-3 sm:tall:col-span-1 md:short:col-span-1;
 }
 
 .track canvas {
   @apply 
   h-[40px] w-[120px]
+  md:short:h-[40px] md:short:w-[120px]
+  md:tall:h-[80px] md:tall:w-[240px]
   sm:h-[60px] sm:w-[180px]
-  md:h-[80px] md:w-[240px];
+  
+  ;
 }
 
 .title {
