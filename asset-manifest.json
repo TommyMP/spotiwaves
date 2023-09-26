@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/spotiwaves/static/css/main.8cf52595.css",
-    "main.js": "/spotiwaves/static/js/main.d611ad42.js",
+    "main.css": "/spotiwaves/static/css/main.485bc996.css",
+    "main.js": "/spotiwaves/static/js/main.ef9e26e8.js",
     "static/js/787.0399b3f6.chunk.js": "/spotiwaves/static/js/787.0399b3f6.chunk.js",
     "static/media/curve.svg": "/spotiwaves/static/media/curve.7a2f0ffb4d4bc875b183.svg",
     "index.html": "/spotiwaves/index.html",
-    "main.8cf52595.css.map": "/spotiwaves/static/css/main.8cf52595.css.map",
-    "main.d611ad42.js.map": "/spotiwaves/static/js/main.d611ad42.js.map",
+    "main.485bc996.css.map": "/spotiwaves/static/css/main.485bc996.css.map",
+    "main.ef9e26e8.js.map": "/spotiwaves/static/js/main.ef9e26e8.js.map",
     "787.0399b3f6.chunk.js.map": "/spotiwaves/static/js/787.0399b3f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8cf52595.css",
-    "static/js/main.d611ad42.js"
+    "static/css/main.485bc996.css",
+    "static/js/main.ef9e26e8.js"
   ]
 }
