@@ -2,7 +2,7 @@ import React from "react";
 
 export function Loader() {
     return (
-        <div className="loader-container">
+        <div className="loader-container" id="load">
             <div class="loading">
                 <div class="obj"></div>
                 <div class="obj"></div>

@@ -87,6 +87,10 @@ h1 {
 
 /* ----------------------------- LOADER ----------------------------------- */
 
+.loader-container {
+  @apply w-[100vw] h-[100vh] fixed bg-neutral-800 bg-opacity-50 flex items-center justify-center flex-col;
+}
+
 .loading-text {
   @apply text-center text-xl text-green-600 mt-6 italic font-bold;
   animation: custom-pulse 1.5s ease-in-out infinite;;
